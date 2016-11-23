@@ -10,6 +10,18 @@ import UIKit
 
 class GroceryListTableViewController: UITableViewController {
 
+    // MARK: Properties
+    
+    var groceryList = [GroceryList]()
+
+    func loadSampleGroceryList() {
+        let list1 = GroceryList(ItemName: "Milk", Quantity: 3)!
+        let list2 = GroceryList(ItemName: "Apple", Quantity: 5)!
+        let list3 = GroceryList(ItemName: "Oranges", Quantity: 2)!
+        
+        groceryList += [list1, list2, list3]
+    }
+    
     // MARK: Outlets
     
     
@@ -18,6 +30,7 @@ class GroceryListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loadSampleGroceryList()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -34,14 +47,27 @@ class GroceryListTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return groceryList.count
     }
 
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Table view cells are reused and should be dequeued using a cell identifier.
+        let cellIdentifier = "GroceryItemCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! GroceryListTableViewCell
+        
+        // Fetches the appropriate item for the data source layout.
+        let groceryItem = groceryList[indexPath.row]
+        
+        cell.itemNameLabel.text = groceryItem.ItemName
+        cell.quantityLabel.text = groceryItem.Quantity?.description
+        
+        return cell
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

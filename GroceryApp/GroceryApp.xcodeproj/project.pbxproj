@@ -14,6 +14,8 @@
 		996FEFDF1DE5B8A700C2F982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996FEFDE1DE5B8A700C2F982 /* Assets.xcassets */; };
 		996FEFE21DE5B8A700C2F982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996FEFE01DE5B8A700C2F982 /* LaunchScreen.storyboard */; };
 		996FEFEA1DE5B9D400C2F982 /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996FEFE91DE5B9D400C2F982 /* GroceryListTableViewController.swift */; };
+		996FEFEC1DE5BC6400C2F982 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996FEFEB1DE5BC6400C2F982 /* GroceryList.swift */; };
+		996FEFEE1DE5C5A500C2F982 /* GroceryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996FEFED1DE5C5A500C2F982 /* GroceryListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		996FEFE11DE5B8A700C2F982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		996FEFE31DE5B8A700C2F982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		996FEFE91DE5B9D400C2F982 /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
+		996FEFEB1DE5BC6400C2F982 /* GroceryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
+		996FEFED1DE5C5A500C2F982 /* GroceryListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				996FEFD41DE5B8A700C2F982 /* AppDelegate.swift */,
 				996FEFD61DE5B8A700C2F982 /* ViewController.swift */,
 				996FEFD81DE5B8A700C2F982 /* Main.storyboard */,
+				996FEFEB1DE5BC6400C2F982 /* GroceryList.swift */,
 				996FEFE91DE5B9D400C2F982 /* GroceryListTableViewController.swift */,
+				996FEFED1DE5C5A500C2F982 /* GroceryListTableViewCell.swift */,
 				996FEFDE1DE5B8A700C2F982 /* Assets.xcassets */,
 				996FEFE01DE5B8A700C2F982 /* LaunchScreen.storyboard */,
 				996FEFE31DE5B8A700C2F982 /* Info.plist */,
@@ -143,7 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				996FEFD71DE5B8A700C2F982 /* ViewController.swift in Sources */,
+				996FEFEE1DE5C5A500C2F982 /* GroceryListTableViewCell.swift in Sources */,
 				996FEFEA1DE5B9D400C2F982 /* GroceryListTableViewController.swift in Sources */,
+				996FEFEC1DE5BC6400C2F982 /* GroceryList.swift in Sources */,
 				996FEFD51DE5B8A700C2F982 /* AppDelegate.swift in Sources */,
 				996FEFDD1DE5B8A700C2F982 /* GroceryApp.xcdatamodeld in Sources */,
 			);
@@ -305,6 +313,7 @@
 				996FEFE81DE5B8A700C2F982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
