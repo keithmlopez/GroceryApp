@@ -44,6 +44,7 @@
                                 <connections>
                                     <outlet property="itemNameLabel" destination="ySt-sl-Sjk" id="1V1-uh-vma"/>
                                     <outlet property="quantityLabel" destination="9AX-OE-4Ud" id="YVJ-Am-f3W"/>
+                                    <segue destination="3O9-bl-e6a" kind="show" identifier="ShowDetail" id="CI5-bH-bjd"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -55,7 +56,7 @@
                     <navigationItem key="navigationItem" id="bFF-Lf-ilo">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fmx-9v-fez">
                             <connections>
-                                <segue destination="3O9-bl-e6a" kind="show" id="QmI-hC-ddR"/>
+                                <segue destination="3O9-bl-e6a" kind="show" identifier="AddItem" id="Yl7-NY-qdr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -70,7 +71,7 @@
         <!--Add Grocery Item-->
         <scene sceneID="oc2-4p-RhT">
             <objects>
-                <viewController title="Add Grocery Item" id="3O9-bl-e6a" sceneMemberID="viewController">
+                <viewController title="Add Grocery Item" id="3O9-bl-e6a" customClass="GroceryItemViewController" customModule="GroceryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0D7-Ki-mxw"/>
                         <viewControllerLayoutGuide type="bottom" id="PIc-oH-8IA"/>
@@ -120,6 +121,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="BmJ-Nj-gY1" id="aBk-tr-g0D"/>
+                        <outlet property="itemNameTextField" destination="WYd-vR-PtP" id="Qn1-cQ-F43"/>
+                        <outlet property="quantityTextField" destination="daL-bn-7f3" id="TVw-MC-ezs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4f5-n1-x7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,4 +168,7 @@
             <point key="canvasLocation" x="-231.19999999999999" y="111.99400299850076"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="CI5-bH-bjd"/>
+    </inferredMetricsTieBreakers>
 </document>

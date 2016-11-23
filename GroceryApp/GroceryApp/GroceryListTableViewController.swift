@@ -122,5 +122,25 @@ class GroceryListTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetail" {
+            let groceryDetailViewController = segue.destination as! GroceryItemViewController
+            
+            // Get the cell that generated this segue.
+            if let selectedMealCell = sender as? GroceryListTableViewCell {
+                let indexPath = tableView.indexPath(for: selectedMealCell)!
+                let selectedMeal = groceryList[indexPath.row]
+                groceryDetailViewController.groceryList = selectedMeal
+            }
+        }
+        else if segue.identifier == "AddItem" {
+            print("Adding new meal.")
+        }
+    }
 
 }
