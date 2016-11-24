@@ -15,11 +15,15 @@ class GroceryListTableViewController: UITableViewController {
     var groceryList = [GroceryList]()
 
     func loadSampleGroceryList() {
-        let list1 = GroceryList(ItemName: "Milk", Quantity: 3)!
-        let list2 = GroceryList(ItemName: "Apple", Quantity: 5)!
-        let list3 = GroceryList(ItemName: "Oranges", Quantity: 2)!
+        GroceryListManager.AddGroceryItem(ItemName: "Milk", Quantity: 3)
+        GroceryListManager.AddGroceryItem(ItemName: "Apples", Quantity: 5)
+        GroceryListManager.AddGroceryItem(ItemName: "Oranges", Quantity: 2)
         
-        groceryList += [list1, list2, list3]
+        //let list1 = GroceryList(ItemName: "Milk", Quantity: 3)!
+        //let list2 = GroceryList(ItemName: "Apple", Quantity: 5)!
+        //let list3 = GroceryList(ItemName: "Oranges", Quantity: 2)!
+        
+        //groceryList += [list1, list2, list3]
     }
     
     // MARK: Outlets
@@ -30,6 +34,8 @@ class GroceryListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //NSUserDefaultsManager.initializeDefaults()
+        
         loadSampleGroceryList()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -52,7 +58,8 @@ class GroceryListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return groceryList.count
+        return GroceryListManager.arrGroceryList.count
+        //return groceryList.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -61,7 +68,8 @@ class GroceryListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! GroceryListTableViewCell
         
         // Fetches the appropriate item for the data source layout.
-        let groceryItem = groceryList[indexPath.row]
+        //let groceryItem = groceryList[indexPath.row]
+        let groceryItem = GroceryListManager.arrGroceryList[indexPath.row]
         
         cell.itemNameLabel.text = groceryItem.ItemName
         cell.quantityLabel.text = groceryItem.Quantity?.description

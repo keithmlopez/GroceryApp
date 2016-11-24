@@ -27,4 +27,8 @@ class GroceryList: NSObject {
             return nil
         }
     }
+    
+    override init() {
+        super.init()
+    }
 }

@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="708" y="111.99400299850076"/>
         </scene>
-        <!--Add Grocery Item-->
+        <!--Grocery Item-->
         <scene sceneID="oc2-4p-RhT">
             <objects>
-                <viewController title="Add Grocery Item" id="3O9-bl-e6a" customClass="GroceryItemViewController" customModule="GroceryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Grocery Item" id="3O9-bl-e6a" customClass="GroceryItemViewController" customModule="GroceryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0D7-Ki-mxw"/>
                         <viewControllerLayoutGuide type="bottom" id="PIc-oH-8IA"/>
@@ -116,7 +116,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmJ-Nj-gY1">
                                 <rect key="frame" x="232" y="601" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton_click:" destination="3O9-bl-e6a" eventType="touchUpInside" id="9ok-iJ-hVy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -169,6 +172,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CI5-bH-bjd"/>
+        <segue reference="Yl7-NY-qdr"/>
     </inferredMetricsTieBreakers>
 </document>

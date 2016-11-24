@@ -16,6 +16,7 @@
 		996FEFEC1DE5BC6400C2F982 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996FEFEB1DE5BC6400C2F982 /* GroceryList.swift */; };
 		996FEFEE1DE5C5A500C2F982 /* GroceryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996FEFED1DE5C5A500C2F982 /* GroceryListTableViewCell.swift */; };
 		996FEFF21DE5CAA600C2F982 /* GroceryItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996FEFF11DE5CAA600C2F982 /* GroceryItemViewController.swift */; };
+		996FEFF41DE67D7B00C2F982 /* GroceryListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996FEFF31DE67D7B00C2F982 /* GroceryListManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		996FEFEB1DE5BC6400C2F982 /* GroceryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
 		996FEFED1DE5C5A500C2F982 /* GroceryListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewCell.swift; sourceTree = "<group>"; };
 		996FEFF11DE5CAA600C2F982 /* GroceryItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItemViewController.swift; sourceTree = "<group>"; };
+		996FEFF31DE67D7B00C2F982 /* GroceryListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				996FEFD81DE5B8A700C2F982 /* Main.storyboard */,
 				996FEFEB1DE5BC6400C2F982 /* GroceryList.swift */,
 				996FEFE91DE5B9D400C2F982 /* GroceryListTableViewController.swift */,
+				996FEFF31DE67D7B00C2F982 /* GroceryListManager.swift */,
 				996FEFED1DE5C5A500C2F982 /* GroceryListTableViewCell.swift */,
 				996FEFDE1DE5B8A700C2F982 /* Assets.xcassets */,
 				996FEFE01DE5B8A700C2F982 /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 				996FEFEC1DE5BC6400C2F982 /* GroceryList.swift in Sources */,
 				996FEFD51DE5B8A700C2F982 /* AppDelegate.swift in Sources */,
 				996FEFDD1DE5B8A700C2F982 /* GroceryApp.xcdatamodeld in Sources */,
+				996FEFF41DE67D7B00C2F982 /* GroceryListManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

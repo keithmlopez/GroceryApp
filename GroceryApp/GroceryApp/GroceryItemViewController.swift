@@ -29,7 +29,7 @@ class GroceryItemViewController: UIViewController {
         
         // Set up views if editing an existing Meal.
         if let groceryList = groceryList {
-            navigationItem.title = groceryList.ItemName
+            itemNameTextField.text = groceryList.ItemName
             quantityTextField.text = groceryList.Quantity?.description
         }
         
@@ -41,7 +41,7 @@ class GroceryItemViewController: UIViewController {
         // Disable the Add button if the text field are empty.
         let itemName = itemNameTextField.text ?? ""
         let quantity = quantityTextField.text ?? ""
-        addButton.isEnabled = !itemName.isEmpty && !quantity.isEmpty
+        //addButton.isEnabled = !itemName.isEmpty && !quantity.isEmpty
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,6 +50,11 @@ class GroceryItemViewController: UIViewController {
     }
     
 
+    @IBAction func saveButton_click(_ sender: UIButton) {
+        GroceryListManager.AddGroceryItem(ItemName: itemNameTextField.text!, Quantity: Int(quantityTextField.text!)!)
+        itemNameTextField.text = ""
+        quantityTextField.text = ""
+    }
     /*
     // MARK: - Navigation
 
