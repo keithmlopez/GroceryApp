@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GroceryApp.xcscheme</key>
+		<key>demoFoodTracker.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>996FEFD01DE5B8A700C2F982</key>
+		<key>99B0E8D51DE7B6F8005E1300</key>
 		<dict>
 			<key>primary</key>
 			<true/>
