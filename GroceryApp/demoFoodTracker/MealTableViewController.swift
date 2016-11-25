@@ -21,11 +21,13 @@ class MealTableViewController: UITableViewController {
         self.title = "Your Meals"
         
         // Load any saved meals, otherwise load sample data
+        
         if let savedMeals = loadMeals() {
             meals += savedMeals
         }
         else
         {
+        
             loadSampleMeals()
         }
         // Uncomment the following line to preserve selection between presentations
@@ -166,12 +168,6 @@ class MealTableViewController: UITableViewController {
     }
     
     func loadMeals() -> [Meal]? {
-        //return NSKeyedArchiver.archiveRootObject(<#T##rootObject: Any##Any#>, toFile: Meal.ArchiveURL.path) as! [Meal]
-        
-        
-        
         return NSKeyedUnarchiver.unarchiveObject(withFile: Meal.ArchiveURL.path) as? [Meal]
-        
-        //return NSKeyedArchiver.archiveRootObject(<#T##rootObject: Any##Any#>, toFile: <#T##String#>)
     }
 }

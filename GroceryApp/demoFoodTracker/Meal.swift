@@ -30,6 +30,7 @@ class Meal: NSObject, NSCoding {
     
     func encode(with aCoder: NSCoder) {
         aCoder.encode(name, forKey:PropertyKey.nameKey)
+        aCoder.encode(quantity, forKey:PropertyKey.qtyKey)
     }
     
     required convenience init?(coder aDecoder:NSCoder) {

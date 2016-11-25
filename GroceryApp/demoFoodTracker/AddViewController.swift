@@ -42,7 +42,7 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         
         // set up views if editing an existing meal
         if let meal = meal {
-            navigationItem.title = meal.name
+            //navigationItem.title = meal.name
             nameTextField.text = meal.name
             quantityTextField.text = meal.quantity?.description
         }
